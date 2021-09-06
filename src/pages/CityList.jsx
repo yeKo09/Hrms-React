@@ -8,7 +8,7 @@ export default function CityList() {
     useEffect(()=>{
         let cityService = new CityService();
         cityService.getCities().then(result=>setCities(result.data.data));
-    })
+    }, [])
 
     return (
         <div>

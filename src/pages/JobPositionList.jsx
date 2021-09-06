@@ -8,7 +8,7 @@ export default function JobPositionList() {
     useEffect(()=>{
         let jobPositionService = new JobPositionService();
         jobPositionService.getJobPositions().then(result=>setJobPositions(result.data.data));
-    });
+    }, []);
 
     return (
         <div>

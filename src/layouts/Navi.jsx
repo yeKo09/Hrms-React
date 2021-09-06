@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Input, Menu, Button, Container } from 'semantic-ui-react'
 
 export default function Navi() {
@@ -8,6 +9,8 @@ export default function Navi() {
                 <Container>
                     <Menu.Item
                         name='Home'
+                        as={NavLink}
+                        to="/"
                     />
                     <Menu.Item
                         name='Profile'

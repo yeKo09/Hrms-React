@@ -17,15 +17,18 @@
 }
 
 .ui.createdat{
-  float:right;
   color:white !important;
   background-color: lightgreen !important;
   cursor: pointer !important;
 }
 
 .ui.deadline{
-  float:right;
   color:white !important;
   background-color: tomato !important;
   cursor: pointer !important;
+}
+
+.ui.jobpostingelement{
+  margin-top:1em;
+  margin-bottom:1em;
 }

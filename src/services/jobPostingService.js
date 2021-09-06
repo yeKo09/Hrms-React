@@ -5,6 +5,10 @@ export default class JobPostingService{
         return axios.get("http://localhost:8080/api/jobposting/getAllActiveJobPostings");
     }
 
+    getAllJobPostingsWithDto(){
+        return axios.get("http://localhost:8080/api/jobposting/getAllActiveJobPostingsWithDto")
+    }
+
     getAllSortedByDateASC(){
         return axios.get("http://localhost:8080/api/jobposting/getAllSortedByDateASC");
     }
@@ -14,7 +18,11 @@ export default class JobPostingService{
     }
 
     getByCompanyName(companyName){
-        return axios.get("http://localhost:8080/api/jobposting/getByCompanyNameAndIsActive?companyName=" + companyName);
+        return axios.get("http://localhost:8080/api/jobposting/getByCompanyName?companyName=" + companyName);
+    }
+
+    getById(id){
+        return axios.get("http://localhost:8080/api/jobposting/getById?id=" + id);
     }
 
     addJobPosting(jobPosting){

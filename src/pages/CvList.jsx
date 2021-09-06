@@ -8,7 +8,7 @@ export default function CvList() {
     useEffect(()=>{
         let cvService = new CvService();
         cvService.getAllCv().then(result=>setCvList(result.data.data));
-    })
+    }, [])
 
     return (
         <div>
